@@ -1,0 +1,303 @@
+<html>
+<head>
+    <title>Cake | Delivery</title>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+    <script>
+        try {
+            typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="test.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Order</a>
+            <a href="#">Gallery</a>
+            <a href="#">Services</a>
+            <a href="#">Locations</a>
+            <a href="#">Login</a>
+            <div class="logo_txt">
+                <img src="FlatIcon/food-icons/cupcake3.png" />
+                <div class="text">Chez ya Djo</div>
+            </div>
+        </div>
+        <div class="main_header">
+            <div class="main_nav">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            </div>
+            <div class="logo">Chez ya Djo</div>
+            <div class="main">
+                <img src="FlatIcon/food-icons/cupcake3.png" />
+                <h1>Find Your Way Home</h1>
+                <p>Get Cake In 3 Easy Steps</p>
+                <a href="#" class="btn_one">Order a Cake</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <div class="step">
+        <h1>How It Works</h1>
+        <div class="line"></div>
+        <div class="one">
+            <img src="FlatIcon/shopping%20cart7.jpg">
+            <p><span class="numb">1</span>
+                <span class="name">ORDER</span> any cake from one of our many brands.</p>
+        </div>
+
+        <div class="one mid">
+            <img src="FlatIcon/hourglass.jpg" style="width: 25px; padding: 5">
+            <p><span class="numb">2</span>
+                <span class="name">WAIT</span> while our team picks up your oder.</p>
+        </div>
+
+        <div class="one">
+            <img src="FlatIcon/truck.jpg">
+            <p><span class="numb">3</span>
+                <span class="name">DELIVERY</span> of your order within 5-20mins.</p>
+        </div>
+
+    </div>
+    <div class="line2"></div>
+    <div class="feat">
+        <div class="feat_header">
+            <h4>Featured Orders</h4>
+            <a href="#" class="btn_two">+Custom Order</a>
+        </div>
+        <div class="line3"></div>
+        <div class="feat_body">
+            <div class="feat_row">
+                <div class="feat_img_1"></div>
+                <h4>Solo - Order</h4>
+                <p>Need of personal satisfaction? We got the cake just for you. We deliver single orders of cake all day. </p>
+                <div class="btns">
+                    <a class="btn_three" href="#">1 Person</a>
+                    <a class="btn_four" href="#">ORDER</a>
+                </div>
+            </div>
+            <div class="feat_row feat_mid">
+                <div class="feat_img_2"></div>
+                <h4>Casual hang - Order</h4>
+                <p>Need to chill with friends? Just hangout we can bring the cake for your group. </p>
+                <div class="btns">
+                    <a class="btn_three" href="#">2-7 Person</a>
+                    <a class="btn_four" href="#">ORDER</a>
+                </div>
+            </div>
+            <div class="feat_row">
+                <div class="feat_img_3"></div>
+                <h4>Ceremony - Order</h4>
+                <p>Need to get some cakes for everyone in your ceremony? don't be afraid to order as much as you want. </p>
+                <div class="btns">
+                    <a class="btn_three" href="#">7+ Person</a>
+                    <a class="btn_four" href="#">ORDER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line4"></div>
+    <div class="gallery">
+        <h1>GALLERY</h1>
+        <div class="gal">
+            <div class="gal_img">
+                <div class="gal_1" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></div>
+                <div class="middle">
+                    <div class="txt1">Coco Paloma Desserts</div>
+                </div>
+            </div>
+            <div class="gal_img">
+                <div class="gal_2" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></div>
+                <div class="middle">
+                    <div class="txt1">Whipped Bakeshops</div>
+                </div>
+            </div>
+            <div class="gal_img">
+                <div class="gal_3" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></div>
+                <div class="middle">
+                    <div class="txt1">Erica Obrien</div>
+                </div>
+            </div>
+            <div class="gal_img">
+                <div class="gal_4" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"></div>
+                <div class="middle">
+                    <div class="txt1">For Goodness</div>
+                </div>
+            </div>
+            <div class="gal_img">
+                <div class="gal_5" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"></div>
+                <div class="middle">
+                    <div class="txt1">Lush Cakery</div>
+                </div>
+            </div>
+            <div class="gal_img">
+                <div class="gal_6" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"></div>
+                <div class="middle">
+                    <div class="txt1">Skys The Limit</div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn_five">+More Images</a>
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-coco-paloma-desserts.jpg" style="height: 70%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-whipped-bakeshop.jpg" style="height: 70%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-erica-obrien-cake-design.jpg" style="height: 70%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-for-goodness-cakes.jpg" style="height: 70%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-lush-cakery.jpg" style="height: 70%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-skys-the-limit-cakes.jpg" style="height: 70%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="btm">
+
+                <div class="column">
+                    <img class="demo cursor" src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-coco-paloma-desserts.jpg" style="width:100%" onclick="currentSlide(1)" alt="Coco Paloma Desserts">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-whipped-bakeshop.jpg" style="width:100%" onclick="currentSlide(2)" alt="Whipped Bakeshops">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-erica-obrien-cake-design.jpg" style="width:100%" onclick="currentSlide(3)" alt="Erica Obrien">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-for-goodness-cakes.jpg" style="width:100%" onclick="currentSlide(4)" alt="For Goodness">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-lush-cakery.jpg" style="width:100%" onclick="currentSlide(5)" alt="Lush Cakery">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-skys-the-limit-cakes.jpg" style="width:100%" onclick="currentSlide(6)" alt="Skys The Limit">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <div class="line3"></div>
+    <div class="services">
+        <h1>SERVICES</h1>
+        <div class="serv">
+            <ul class="servlist ">
+                <li>Hairstyle</li>
+                <li>Car decor</li>
+                <li>event decor</li>
+            </ul>
+        </div>
+    </div>
+<div class="footer">
+    <div class="footer_wrapper">
+        <div class="footer_row">
+            <a href="test.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Order</a>
+            <a href="#">Gallery</a>
+            <a href="#">Services</a>
+            <a href="#">Locations</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="footer_row">
+           <p>Get Amazing Deal In Your Inbox</p>
+            <input type="text" name="Email" placeholder="Email" autocomplete="off">
+            <input type="submit" value="SUBSCRIBE">
+        </div>
+    </div>
+    <div class="footer_btm">
+        <p>Privacy | Terms</p>
+       <p>© 2017 Petro_DesignR All Rights Reserved</p>
+    </div>
+</div>
+
+
+</body>
+</html>

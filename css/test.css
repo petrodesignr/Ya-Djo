@@ -1,0 +1,779 @@
+@font-face {
+    font-family: "gotham";
+    src: url('../fonts/GothamBookItalic.ttf');
+    src: url('../fonts/GothamRoundedBold_21016.ttf');
+    src: url('../fonts/GothamRoundedBook_21018.ttf');
+    src: url('../fonts/GothamRoundedLight_21020.ttf');
+    src: url('../fonts/GothamRoundedMedium_21022.ttf');
+    src: url('../fonts/bodybag.ttf')
+}
+
+@font-face {
+    font-family: "mom";
+    src: url('../EchinosParkScript_PERSONAL_USE_ONLY.ttf')
+}
+
+html {
+    font-family: "gotham rounded";
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #112;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 10px 10px 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+.sidenav a:nth-child(2) {
+    color: white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -6;
+    left: -16%;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.sidenav a:nth-child(2) {
+    margin-top: 4em;
+}
+
+.main {
+    margin-top: 4em;
+}
+
+.logo {
+    float: right;
+    margin: -0.8em 0.5em 0 0;
+    font-family: "mom";
+    font-size: 50px;
+}
+
+.logo_txt img {
+    width: 50px;
+    height: 65px;
+    filter: invert(100%);
+    opacity: 0.1;
+    margin-top: 4em;
+}
+
+.logo_txt .text {
+    font-family: "mom";
+    font-size: 30px;
+    color: white;
+    opacity: 0.1;
+}
+
+.main_header {
+    background-image: radial-gradient(white -110%, black 200%), url(../cake/386297.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 700px;
+    color: white;
+}
+
+.main_header img {
+    width: 60px;
+    height: 75px;
+    filter: invert(100%);
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+.main_header h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 0.7em;
+}
+
+.main_header p {
+    font-size: 20px;
+    margin-bottom: 2.5em;
+}
+
+.btn_one {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(225, 29, 112, 1);
+    padding: 1em 2.5em;
+    border-radius: 7px;
+}
+
+.main_nav {
+    height: 50px;
+}
+
+.main_nav span {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    line-height: 50px;
+    margin-left: 0.25em;
+    float: left;
+}
+
+.step {
+    width: 80%;
+    height: 300px;
+    text-align: center;
+    margin: 2em 10% 0 10%;
+}
+
+.step h1 {
+    color: #797979;
+}
+
+.line {
+    width: 10%;
+    margin: -0.6em 45% 3em 45%;
+    height: 2px;
+    background-color: #e52f78;
+}
+
+.one {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.one img {
+    width: 35px;
+}
+
+.one p {
+    line-height: 35px;
+    margin: 1em;
+    color: #797979;
+}
+
+.numb {
+    border: solid 1px #e52f78;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border-radius: 100px;
+    margin: 0em 4 0em 4;
+    color: #e52f78;
+}
+
+.name {
+    font-weight: 600;
+    color: #e52f78;
+}
+
+.mid {
+    width: 34%;
+}
+
+.line2 {
+    width: 10%;
+    margin: -2em 45% 2em 45%;
+    text-align: center;
+    height: 2px;
+    background-color: #e52f78;
+}
+
+.feat_header {
+    clear: both;
+    display: inline-block;
+    width: 80%;
+    margin: 0 10%;
+    height: 60px;
+}
+
+.feat_header a {
+    float: right;
+    margin: 0;
+}
+
+.feat_header h4 {
+    float: left;
+    color: #797979;
+    font-size: 24px;
+    margin: 0.5em 0 0 0;
+}
+
+.btn_two {
+    text-decoration: none;
+    color: #797979;
+    border: solid 1px #e52f78;
+    padding: 1em 2.5em;
+    border-radius: 7px;
+    font-weight: 900;
+}
+
+.feat_body {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.feat_row {
+    width: 31%;
+    border: 1px solid #E0E1E2;
+    display: block;
+    float: left;
+    height: 440px;
+    position: relative;
+}
+
+.feat_mid {
+    margin: 0 2.5%;
+    width: 32%;
+}
+
+.feat_img_1 {
+    display: block;
+    height: 250px;
+    width: 100%;
+    background-image: url(../cake/333634.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feat_img_2 {
+    display: block;
+    height: 250px;
+    width: 100%;
+    background-image: url(../cake/386297.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feat_img_3 {
+    display: block;
+    height: 250px;
+    width: 100%;
+    background-image: url(../cake/404896.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.line3 {
+    clear: both;
+    width: 80%;
+    margin: 0.25em 10% 0.5em 10%;
+    height: 1px;
+    background-color: #e52f78;
+    margin-bottom: 2em;
+}
+
+.line4 {
+    text-align: center;
+    clear: both;
+    width: 80%;
+    margin: 0em 10% 0.5em 10%;
+    height: 1px;
+    background-color: #e52f78;
+    margin-bottom: 2em;
+}
+
+.feat_body h4 {
+    color: #797979;
+    font-size: 20px;
+    margin: 1em 1em 0.25em 1em;
+}
+
+.feat_body p {
+    color: #797979;
+    opacity: 0.9;
+    margin: 0 1em 2em 1em;
+}
+
+.btn_three {
+    text-decoration: none;
+    color: #797979;
+    border: solid 1px #E0E1E2;
+    padding: 1em 2.5em;
+    border-radius: 7px;
+    font-weight: 200;
+}
+
+.btn_four {
+    text-decoration: none;
+    padding: 1em 2.5em;
+    border-radius: 7px;
+    color: white;
+    background-color: #e52f78;
+    font-weight: 200;
+}
+
+.btns {
+    text-align: center;
+}
+
+.feat_row:last-child {
+    margin-bottom: 5em;
+}
+
+.gallery {
+    height: 500px;
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.gallery h1 {
+    color: #797979;
+}
+
+.gal {
+    text-align: center;
+    margin: 0 0 0 5%;
+    height: 620px;
+}
+
+.gal_img {
+    width: 31%;
+    border: 1px solid #E0E1E2;
+    display: block;
+    float: left;
+    height: 300px;
+    position: relative;
+    margin: 0% 0% .2% .2%;
+}
+
+.gal_1 {
+    display: block;
+    height: 300px;
+    width: 100%;
+    background-image: url(../cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-coco-paloma-desserts.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.gal_img:hover .gal_1 {
+    opacity: 0.3;
+}
+
+.gal_img:hover .gal_2 {
+    opacity: 0.3;
+}
+
+.gal_img:hover .gal_3 {
+    opacity: 0.3;
+}
+
+.gal_img:hover .gal_4 {
+    opacity: 0.3;
+}
+
+.gal_img:hover .gal_5 {
+    opacity: 0.3;
+}
+
+.gal_img:hover .gal_6 {
+    opacity: 0.3;
+}
+
+.gal_img:hover .middle {
+    opacity: 1;
+}
+
+.txt1 {
+    color: #e52f78;
+    font-size: 20px;
+}
+
+.gal_2 {
+    display: block;
+    height: 300px;
+    width: 100%;
+    background-image: url(../cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-whipped-bakeshop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gal_3 {
+    display: block;
+    height: 300px;
+    width: 100%;
+    background-image: url(../cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-erica-obrien-cake-design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gal_4 {
+    display: block;
+    height: 300px;
+    width: 100%;
+    background-image: url(../cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-for-goodness-cakes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gal_5 {
+    display: block;
+    height: 300px;
+    width: 100%;
+    background-image: url(../cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-lush-cakery.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gal_6 {
+    display: block;
+    height: 300px;
+    width: 100%;
+    background-image: url(../cake/2014_bridescom-Editorial_Images-08-most-beautiful-wedding-cakes-Large-most-beautiful-cakes-skys-the-limit-cakes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery h4 {
+    color: #797979;
+    font-size: 20px;
+    float: left;
+    margin: -3em 0em 0em 0em;
+}
+
+.gallery a {
+    float: left;
+}
+
+.btn_five {
+    text-decoration: none;
+    color: #797979;
+    border: solid 1px #e52f78;
+    padding: 1em 2.5em;
+    border-radius: 7px;
+    font-weight: 900;
+    margin: 0 0 2em 0;
+}
+
+.row>.column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 10%;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 18px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.96);
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: transparent;
+    padding: 0px 0px;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.btm {
+    margin-left: 28.5%;
+}
+
+.services {
+    text-align: center;
+}
+
+.services h1 {
+    color: #797979;
+    margin: -0.5em 0em 0em 0em;
+}
+
+.serv {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(229, 47, 120, 1);
+    background-image: url(../img1.jpg);
+    background-blend-mode: screen;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em 0em 0em 0em;
+}
+
+.servlist li {
+    text-decoration: none;
+    display: inline-block;
+    font-family: "mom";
+    font-size: 110px;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0em 1em 0em 1em;
+}
+
+.footer_wrapper {
+    width: 60%;
+    margin: 0 20%;
+    padding: 3.5em 0;
+}
+
+.footer_row {
+    float: left;
+}
+
+.footer_row:first-child {
+    width: 35%;
+}
+
+.footer_row a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #797979;
+    margin: 0.5em 0;
+}
+.footer_row a:hover{
+    color: #e52f78;
+}
+.footer_row a:active{
+    color: #e52f78;
+}
+
+.footer_row:first-child a:first-child {
+    color: #e52f78;
+}
+
+.footer_row:last-child {
+    width: 65%;
+    color: #797979;
+}
+
+.footer_row p {
+    font-size: 12px;
+    color: #95989a;
+    opacity: 0.8;
+    margin: 1em 0;
+}
+
+input:first-child {}
+
+input {
+    width: 350px;
+    line-height: 55px;
+    padding: 0 1em;
+    outline: none;
+    font-size: 14px;
+    border-radius: 7px;
+    border: solid 1px #E0E1E2;
+}
+
+input:last-child {
+    text-decoration: none;
+    color: white;
+    background-color: #e52f78;
+    width: 150px;
+    border-radius: 7px;
+    margin-left: 1em;
+}
+
+::-webkit-input-placeholder {
+    color: #E0E1E2;
+}
+
+::-moz-placeholder {
+    color: #E0E1E2;
+}
+
+:-ms-input-placeholder {
+    color: #E0E1E2;
+}
+
+:-moz-placeholder {
+    color: #E0E1E2;
+}
+
+.footer_btm {
+    text-align: center;
+    margin: 160px 0 0 0;
+    color: #95989a;
+}
+.footer_btm p{
+    font-size: 12px;
+}
+

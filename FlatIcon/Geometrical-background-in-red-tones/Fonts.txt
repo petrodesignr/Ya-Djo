@@ -1,0 +1,17 @@
+Fonts used in this design;
+
+Font:ALLER, 
+Author:	Dalton Maag Ltd, 
+Url: http://www.fontsquirrel.com/fonts/Aller;
+
+Font:PT SERIF, 
+Author:	Paratype, 
+Url: http://www.fontsquirrel.com/fonts/pt-serif;
+
+
+
+
+
+
+
+
